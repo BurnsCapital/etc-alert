@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "mocha && node index.js",
+    "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Cody W Burns<cody.w.burns@gmail.com>",
+  "license": "Apache-2.0",
   "dependencies": {
     "dotenv": "^6.2.0",
+    "mocha": "^5.2.0",
     "pigpio": "^1.2.1",
     "sleep": "^5.2.4",
     "web3": "^1.0.0-beta.37",
