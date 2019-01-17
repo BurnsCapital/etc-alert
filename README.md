@@ -1,6 +1,6 @@
 #### Work in Progress
 
-#### Not functional
+#### not functional - bad spelling
 
 🚨 🚨 🚨 Emergeny alert system for network mining anomalies 🚨 🚨 🚨 
 
@@ -15,11 +15,17 @@ Runs the node tests and begins the monitoring service. Any whisper messages rece
 
 ## To do
 
-add approved defcon list to a contract and have signature matching to enter defcon1 (what ever that means (bells, Air raid horns, etc)
+- [ ] add approved defcon list to a contract and have signature matching to enter defcon1 (what ever that means (bells, Air raid horns, etc)
 
+- [ ] find standalone whisper client
+
+- [ ] 3d print sketch
 
 
 ## .env options
+
 NODEENV [dev, whisper]
+
 LOGLEVEL [debug, error, info]
+
 WEB3_URL [whisper provider]
