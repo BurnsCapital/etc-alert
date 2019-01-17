@@ -62,7 +62,7 @@ mainEmitter.on('alert', (payload) => {
 
 
 // test functions
-function main(){
+async function main(){
  switch(process.env.NODEENV){
  case "dev":
   log.info('[index#setenv] dev mode');
@@ -83,12 +83,16 @@ function main(){
     log.info('[index#setenv] whisper mode')
 
    // check if the node is listening
-   log.debug(web3.shh.net.isListening());
-   if (!web3.shh.net.isListening()){
-      log.error('[index#whisper] node is not listening');
-      sleep.sleep(5);
-      main();
-   };
+  // log.debug(web3.shh.net.isListening());
+//  var web3Check = await web3.shh.net.isListening();
+ // web3Check.catch(function(error){
+//	log.error(error);
+//	}); 
+ // if (!web3.shh.net.isListening()){
+ //     log.error('[index#whisper] node is not listening');
+ //     sleep.sleep(5);
+ //     main();
+ //  };
    
     web3.shh.subscribe('messages', {topics:['0x657463416c657274']})
     .on('data', (payload) => { 
